@@ -19,14 +19,14 @@ export default function Page({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link href="./style/global.css" rel="stylesheet" />
+        <link href="/style/global.css" rel="stylesheet" />
       </head>
       <body className="bg-white text-secondary antialiased">
         <div id="root" data-component="App">
           <App />
         </div>
 
-        <script src="./assets/client.min.js"></script>
+        <script src="/assets/client.min.js"></script>
       </body>
     </html>
   )

@@ -16,7 +16,7 @@ export default function (eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy({ "src/assets/": "assets/" })
 
-  // Ignore component and utility files (they're not pages)
+  // Ignore component and utility files
   eleventyConfig.ignores.add("src/components/**")
   eleventyConfig.ignores.add("src/utils/**")
 
@@ -25,5 +25,6 @@ export default function (eleventyConfig) {
       input: "src",
       output: "_site",
     },
+    pathPrefix: "/",
   }
 }
