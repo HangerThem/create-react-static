@@ -135,7 +135,7 @@ function updateIndexPage(targetDir: string, config: ProjectConfig) {
   let content = fs.readFileSync(indexPath, "utf-8")
 
   content = content.replace(
-    /export const data = \{[\s\S]*?\}/,
+    /export const data = \{[\s\S]*?\n\}/,
     `export const data = {
   title: "${config.title}",
   description: "${config.description}",
