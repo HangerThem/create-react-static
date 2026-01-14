@@ -1,0 +1,29 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "type": "module",
+  "scripts": {
+    "dev": "esbuild src/client.tsx --bundle --minify --outfile=_site/assets/client.min.js --format=esm --sourcemap --watch=forever & eleventy --formats=11ty.jsx,11ty.tsx --serve & tailwindcss -i ./src/style/global.css -o ./_site/style/global.css --watch",
+    "build": "esbuild src/client.tsx --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\" --outfile=_site/assets/client.min.js --format=esm && tailwindcss -i ./src/style/global.css -o ./_site/style/global.css --minify && eleventy --formats=11ty.jsx,11ty.tsx"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "clsx": "^2.1.1",
+    "esbuild": "^0.27.0",
+    "framer-motion": "^12.23.24",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^3.3.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.4.21",
+    "esbuild-register": "^3.6.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.14"
+  }
+}

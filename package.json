@@ -1,0 +1,37 @@
+{
+  "name": "create-react-static",
+  "version": "1.0.0",
+  "description": "CLI to scaffold React-to-static-HTML projects with Eleventy, Tailwind, and TypeScript",
+  "type": "module",
+  "bin": {
+    "create-react-static": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "static-site-generator",
+    "eleventy",
+    "tailwind",
+    "cli",
+    "scaffold"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "prompts": "^2.4.2",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.3.0"
+  }
+}
