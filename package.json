@@ -1,6 +1,6 @@
 {
   "name": "create-react-static",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "CLI to scaffold React-to-static-HTML projects with Eleventy, Tailwind, and TypeScript",
   "type": "module",
   "bin": {

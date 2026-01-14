@@ -22,7 +22,7 @@ create-react-static my-site
 - 🏗️ **Eleventy** - Fast static site generation
 - 🎨 **Tailwind CSS** - Utility-first styling
 - 🎬 **Framer Motion** - Animations out of the box
-- 📦 **esbuild** - Lightning-fast bundling
+- 🔥 **Vite** - Lightning-fast build tool
 - 📝 **TypeScript** - Full type safety
 
 ## Output
