@@ -23,7 +23,11 @@
     "cli",
     "scaffold"
   ],
-  "author": "",
+  "author": "HangerThem",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HangerThem/create-react-static"
+  },
   "license": "MIT",
   "dependencies": {
     "prompts": "^2.4.2",
