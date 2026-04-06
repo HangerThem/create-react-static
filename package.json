@@ -4,7 +4,7 @@
   "description": "CLI to scaffold React-to-static-HTML projects with Eleventy, Tailwind, and TypeScript",
   "type": "module",
   "bin": {
-    "create-react-static": "./dist/index.js"
+    "create-react-static": "dist/index.js"
   },
   "files": [
     "dist",
@@ -26,7 +26,7 @@
   "author": "HangerThem",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HangerThem/create-react-static"
+    "url": "git+https://github.com/HangerThem/create-react-static.git"
   },
   "license": "MIT",
   "dependencies": {
