@@ -2,7 +2,7 @@
 
 import { hydrateRoot } from "react-dom/client"
 
-const modules = import.meta.glob("./components/*.11ty.tsx", { eager: true })
+const modules = import.meta.glob("./pages/*.11ty.tsx", { eager: true })
 
 const registry: Record<string, React.ComponentType> = {}
 for (const [path, module] of Object.entries(modules)) {

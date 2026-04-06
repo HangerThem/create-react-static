@@ -14,6 +14,13 @@ pnpm dev
 
 Open [http://localhost:8080](http://localhost:8080) to view your site.
 
+`pnpm dev` runs two processes in parallel:
+
+- Eleventy (`--serve --incremental`) for fast page rebuilds + live reload
+- Vite build watch for `_site/assets/client.min.js`
+
+Note: Eleventy live reload does a full page refresh (not React HMR).
+
 ## Build
 
 ```bash
@@ -28,8 +35,9 @@ The static site will be generated in the `_site/` directory.
 src/
 ├── index.11ty.tsx      # Pages (*.11ty.tsx become HTML pages)
 ├── client.tsx          # Client-side hydration entry
+├── pages/							# React pages
 ├── components/         # React components
-├── style/              # CSS files
+├── css/                # CSS files
 ├── utils/              # Utility functions
 └── assets/             # Static assets (copied to _site/assets/)
 ```

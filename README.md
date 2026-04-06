@@ -8,6 +8,18 @@ CLI to scaffold React-to-static-HTML projects with Eleventy, Tailwind CSS, and T
 # Using npx (recommended)
 npx create-react-static my-site
 
+# Pick a package manager up-front (optional)
+npx create-react-static my-site --pm pnpm
+
+# Non-interactive (uses defaults where needed)
+npx create-react-static my-site -y
+
+# Overwrite if the folder exists
+npx create-react-static my-site -f
+
+# Scoped package name, but safe directory name
+npx create-react-static @acme/my-site --dir my-site
+
 # Or with pnpm
 pnpm create react-static my-site
 
